@@ -43,12 +43,9 @@ public class ArrayOperations {
     /** Linear search. O(n) */
     public void search(int value) {
         if (size == 0) { System.out.println("  [!] Array is empty."); return; }
-        int steps = 0;
-        for (int i = 0; i < size; i++) {
-            steps++;
-            if (data[i] == value) { System.out.println("  Found " + value + " at index " + i + " (steps: " + steps + ")"); return; }
-        }
-        System.out.println("  " + value + " not found (steps: " + steps + ")");
+        int[] r = SearchOperations.linearSearch(toArray(), value);
+        if (r[0] >= 0) System.out.println("  Found " + value + " at index " + r[0] + " (steps: " + r[1] + ")");
+        else System.out.println("  " + value + " not found (steps: " + r[1] + ")");
     }
  
     public void display() {
