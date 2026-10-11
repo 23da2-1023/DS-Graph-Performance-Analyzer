@@ -1,3 +1,4 @@
+/** Array-based stack (LIFO). */
 public class StackOperations {
     private static final int CAPACITY = 10;
     private final int[] items = new int[CAPACITY];
@@ -11,6 +12,16 @@ public class StackOperations {
         System.out.println("  Pushed " + value);
     }
  
+    public void pop() {
+        if (isEmpty()) { System.out.println("  [!] Stack underflow: cannot pop from an empty stack."); return; }
+        System.out.println("  Popped " + items[top--]);
+    }
+ 
+    public void peek() {
+        if (isEmpty()) { System.out.println("  [!] Stack is empty. Nothing to peek."); return; }
+        System.out.println("  Top element: " + items[top]);
+    }
+ 
     public void display() {
         if (isEmpty()) { System.out.println("  Stack is empty."); return; }
         System.out.print("  Stack (top -> bottom): ");
@@ -21,14 +32,15 @@ public class StackOperations {
     public void menu() {
         while (true) {
             System.out.println("\n--------------- STACK OPERATIONS ---------------");
-            System.out.println("1. Push\n2. Display\n3. Return to Main Menu");
-            int c = InputHelper.readInt("Enter your choice: ", 1, 3);
+            System.out.println("1. Push\n2. Pop\n3. Peek\n4. Display\n5. Return to Main Menu");
+            int c = InputHelper.readInt("Enter your choice: ", 1, 5);
             switch (c) {
                 case 1: push(InputHelper.readInt("Value: ")); break;
-                case 2: display(); break;
+                case 2: pop(); break;
+                case 3: peek(); break;
+                case 4: display(); break;
                 default: return;
             }
         }
     }
 }
-
