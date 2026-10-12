@@ -11,15 +11,15 @@ A single integrated Java console application that demonstrates arrays, stacks, q
 
 | Student Name | Student ID | Assigned Responsibility |
 |---|---|---|
-| [Leader full name] | [ID] | Graph component, main menu, integration, GitHub management |
-| [Member 2 full name] | [ID] | Array and Searching |
-| [Member 3 full name] | [ID] | Stack and Queue |
-| [Member 4 full name] | [ID] | Linked List and Performance Comparison |
+| M. S. A. Shihani | 23DA2-1023 | Graph component, main menu, integration, GitHub management |
+| M. M. F. Shahra | 23DA2-1056 | Array and Searching |
+| A. K. Jesla | 23DA2-0995 | Stack and Queue |
+| M. I. A. Manoona | 23DA2-1054 | Linked List and Performance Comparison |
 
 ## Individual Contributions
 
-**Student Name:** [Leader full name]
-**Student ID:** [ID]
+**Student Name:** M. S. A. Shihani
+**Student ID:** 23DA2-1023
 **Assigned Responsibility:** Graph component, main menu, integration
 **Individual Contribution:**
 - Implemented Graph class (adjacency list)
@@ -29,8 +29,8 @@ A single integrated Java console application that demonstrates arrays, stacks, q
 - Managed the GitHub repository, reviews and merges
 - Wrote the README and tested the full system
 
-**Student Name:** [Member 2 full name]
-**Student ID:** [ID]
+**Student Name:** M. M. F. Shahra
+**Student ID:** 23DA2-1056
 **Assigned Responsibility:** Array and Searching
 **Individual Contribution:**
 - Implemented array insert, delete, search, display
@@ -38,8 +38,8 @@ A single integrated Java console application that demonstrates arrays, stacks, q
 - Added input validation and tested the module
 - Integrated the module with the main application
 
-**Student Name:** [Member 3 full name]
-**Student ID:** [ID]
+**Student Name:** A. K. Jesla
+**Student ID:** 23DA2-0995
 **Assigned Responsibility:** Stack and Queue
 **Individual Contribution:**
 - Implemented Stack: push, pop, peek, display
@@ -47,8 +47,8 @@ A single integrated Java console application that demonstrates arrays, stacks, q
 - Handled empty stack / empty queue conditions
 - Tested the module and integrated it with the main application
 
-**Student Name:** [Member 4 full name]
-**Student ID:** [ID]
+**Student Name:** M. I. A. Manoona
+**Student ID:** 23DA2-1054
 **Assigned Responsibility:** Linked List and Performance Comparison
 **Individual Contribution:**
 - Implemented Linked List insert, delete, search, display
@@ -58,7 +58,7 @@ A single integrated Java console application that demonstrates arrays, stacks, q
 ## Technologies Used
 - Java (JDK 17 or later)
 - Git and GitHub (branches, commits, pull requests, issues)
-- IDE: [IntelliJ IDEA / VS Code / Eclipse]
+- IDE: [ VS Code ]
 
 ## Main System Features
 1. Array operations (insert, delete, search, display)
@@ -86,12 +86,7 @@ src/
 ```
 
 ## How to Run
-1. Install JDK 17 or later.
-2. Clone the repository:
-   `git clone https://github.com/[username]/[repo-name].git`
-3. Open the folder: `cd [repo-name]/src`
-4. Compile: `javac *.java`
-5. Run: `java Main`
+1. Open the folder: `cd src`
+2. Compile: `javac *.java`
+3. Run: `java Main`
 
-## Demonstration Video
-[Link / included in submission]
