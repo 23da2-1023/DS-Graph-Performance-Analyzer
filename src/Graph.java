@@ -94,7 +94,8 @@ public class Graph {
                     if (isEmpty()) { System.out.println("  [!] Graph is empty."); break; }
                     int s = InputHelper.readInt("Start vertex: ");
                     if (!hasVertex(s)) { System.out.println("  [!] Vertex " + s + " does not exist."); break; }
-                    if (c == 4) bfs(s, true); else dfs(s, true);
+                    int steps = (c == 4) ? bfs(s, true) : dfs(s, true);
+                    PerformanceAnalyzer.log((c == 4 ? "BFS" : "DFS") + " from " + s + " | steps=" + steps);
                     break;
                 case 6: loadSample(); break;
                 default: return;
