@@ -1,7 +1,13 @@
-/** Main menu (Day 2 version: only the Graph module is connected so far). */
+/** Data Structure & Graph Performance Analyzer - main menu and integration. */
 public class Main {
     public static void main(String[] args) {
+        ArrayOperations array = new ArrayOperations();
+        StackOperations stack = new StackOperations();
+        QueueOperations queue = new QueueOperations();
+        LinkedListOperations list = new LinkedListOperations();
+        SearchOperations search = new SearchOperations(array);
         Graph graph = new Graph();
+        PerformanceAnalyzer perf = new PerformanceAnalyzer(graph);
  
         while (true) {
             System.out.println("\n=============================================");
@@ -10,9 +16,17 @@ public class Main {
             System.out.println("1. Array Operations\n2. Stack Operations\n3. Queue Operations\n4. Linked List Operations");
             System.out.println("5. Searching Operations\n6. Graph Operations\n7. Performance Comparison\n8. Display All Results\n9. Exit");
             int c = InputHelper.readInt("Enter your choice: ", 1, 9);
-            if (c == 6) graph.menu();
-            else if (c == 9) { System.out.println("Goodbye!"); return; }
-            else System.out.println("  This module is not integrated yet.");
+            switch (c) {
+                case 1: array.menu(); break;
+                case 2: stack.menu(); break;
+                case 3: queue.menu(); break;
+                case 4: list.menu(); break;
+                case 5: search.menu(); break;
+                case 6: graph.menu(); break;
+                case 7: perf.run(); break;
+                case 8: PerformanceAnalyzer.displayAllResults(); break;
+                default: System.out.println("Goodbye!"); return;
+            }
         }
     }
 }
