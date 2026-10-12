@@ -1,3 +1,5 @@
+import java.util.Arrays;
+ 
 /** Linear Search vs Binary Search (returns {index, steps}). */
 public class SearchOperations {
     private final ArrayOperations arrayModule;
